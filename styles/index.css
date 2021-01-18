@@ -94,6 +94,10 @@ nav ul li a:hover {
   }
 }
 
+.logo a:hover {
+  background-color: inherit;
+}
+
 @media only screen and (max-width: 700px) {
   .logo {
     -webkit-box-flex: 1;
@@ -161,5 +165,42 @@ header {
   padding-right: 5%;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+#Hat {
+  -webkit-animation: hatr 0.6s ease-in-out infinite;
+          animation: hatr 0.6s ease-in-out infinite;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  transform-box: fill-box;
+}
+
+@-webkit-keyframes hatr {
+  from {
+    -webkit-transform: rotateZ(-10deg);
+            transform: rotateZ(-10deg);
+  }
+  to {
+    -webkit-transform: rotateZ(10deg);
+            transform: rotateZ(10deg);
+  }
+}
+
+@keyframes hatr {
+  from {
+    -webkit-transform: rotateZ(-10deg);
+            transform: rotateZ(-10deg);
+  }
+  to {
+    -webkit-transform: rotateZ(10deg);
+            transform: rotateZ(10deg);
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .animation svg {
+    width: 200px;
+    height: auto;
+  }
 }
 /*# sourceMappingURL=index.css.map */

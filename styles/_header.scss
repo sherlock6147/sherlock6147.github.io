@@ -6,9 +6,30 @@ header{
     color: $on-header-color;
     min-height: 40vh;
     // display: flex;
-    // flex-direction: row;
     padding-left: 5%;
     padding-right: 5%;
     padding-top: 20px;
     padding-bottom: 20px;
+    
+}
+#Hat{
+    animation: hatr 0.6s ease-in-out infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+@keyframes hatr {
+    from {
+        transform: rotateZ(-10deg);
+    }
+    to {
+        transform: rotateZ(10deg);
+    }
+}
+.animation{
+    svg{
+        @media only screen and (max-width: 700px){
+            width: 200px;
+            height: auto;  
+        }
+    }
 }
