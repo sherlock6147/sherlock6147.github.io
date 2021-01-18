@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;400;600;700&family=Ubuntu&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;400;600;700&family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;400;600;700&family=Ubuntu&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Ubuntu";
 }
 
 a {
@@ -165,6 +167,45 @@ header {
   padding-right: 5%;
   padding-top: 20px;
   padding-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header article {
+  min-width: 200px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  padding-top: 20px;
+}
+
+header article h1 {
+  font-size: 40px;
+  font-family: "Fira Sans";
+}
+
+header article h2 {
+  font-size: 28px;
+  opacity: 0.7;
+}
+
+@media only screen and (max-width: 700px) {
+  header article {
+    padding: 0px;
+  }
+  header article h1 {
+    font-size: 32px;
+  }
 }
 
 #Hat {
@@ -199,7 +240,7 @@ header {
 
 @media only screen and (max-width: 700px) {
   .animation svg {
-    width: 200px;
+    width: 300px;
     height: auto;
   }
 }
