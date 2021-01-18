@@ -2,7 +2,7 @@
 @import 'colors';
 header{
     border-radius: 20px;
-    background-color: $header-color;
+    background: linear-gradient(180deg, #59FFAF 0%, rgba(89, 225, 255, 0.69) 100%);
     color: $on-header-color;
     min-height: 40vh;
     padding-left: 5%;
