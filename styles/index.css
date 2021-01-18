@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;400;600;700&family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;400;600;700&family=Ubuntu&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -14,6 +15,13 @@ a {
 body {
   background-color: #0F0F0F;
   color: #F2EEFF;
+}
+
+main {
+  padding-right: 10vw;
+  padding-left: 10vw;
+  padding-top: 20px;
+  text-align: center;
 }
 
 nav {
@@ -142,5 +150,16 @@ nav ul li a:hover {
   .link {
     display: none;
   }
+}
+
+header {
+  border-radius: 20px;
+  background-color: #59FFAF;
+  color: #17093E;
+  min-height: 40vh;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 /*# sourceMappingURL=index.css.map */

@@ -1,0 +1,14 @@
+@import 'fonts';
+@import 'colors';
+header{
+    border-radius: 20px;
+    background-color: $header-color;
+    color: $on-header-color;
+    min-height: 40vh;
+    // display: flex;
+    // flex-direction: row;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
