@@ -23,9 +23,10 @@ nav{
         li{
             color: $on-nav-color;
             text-align: center;
-            font-size: 35px;
             a{
                 text-decoration: none;
+                font-size: 28px;
+                font-weight: 600;
                 font-family: $heading;
                 padding: 5px;
                 &:hover{
