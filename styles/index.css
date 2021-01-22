@@ -386,7 +386,7 @@ header article h2 {
   outline: none;
 }
 
-#contact .submit {
+#contact #submit-btn {
   margin-top: 20px;
   border: none;
   outline: none;

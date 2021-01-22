@@ -234,7 +234,7 @@ footer {
   outline: none;
 }
 
-#contact .submit {
+#contact #submit-btn {
   margin-top: 20px;
   border: none;
   outline: none;
