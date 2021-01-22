@@ -6,6 +6,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Welcome to my Portfolio</title>
     <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
 </head>
 <body>
     <!-- TODO Add Navbar -->
@@ -13,11 +14,19 @@
         <ul>
             <li><div class="logo"><a href="index.html"><img src="Assets/Shelock6147 Logo.png" alt="logo"></a></div></li>
             <li class="link"><a href="index.html">Home</a></li>
-            <li class="link"><a href="#">Projects</a></li>
-            <li class="link"><a href="#">Contact</a></li>
-            <li><button class="menu"><img src="Assets/Menu Logo.png" alt="menu"></button></li>
+            <li class="link"><a href="pages/projects.html">Projects</a></li>
+            <li class="link"><a href="pages/contact.html">Contact</a></li>
+            <li><button class="menu" id="menu-btn"><img src="Assets/Menu Logo.png" alt="menu"></button></li>
         </ul>
+        <div class="navigation invisible" id="main-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="pages/projects.html">Projects</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
+            </ul>
+        </div>
     </nav>
+    
     <main>
     <!-- TODO Add Header -->
         <header>
@@ -42,8 +51,10 @@
             </article>   
         </header>
     <!-- TODO Add Main Content -->
-    <section>
-        <h1>About Me</h1>
+    <br>
+    <section class="welcome">
+        <h2>About Me</h2>
+        <p>I love to build new things and test new ideas. My github repo is a way for me to showcase my work and if you want to contact me feel free to reach out in the contact form</p>
     </section>
     <div class="section-holder">
         <section id="projects">
@@ -77,12 +88,43 @@
     <!-- TODO Add Recent Projects -->
     <!-- TODO Add All projects and a search section-->
     <!-- TODO Add Shop's Icon -->
-    <!-- TODO Add Contact form -->
+    <!-- TODO Add Contact form -->  
+
+    <section id="contact">
+        <h1>Contact Me</h1>
+        <form action="https://send.pageclip.co/YQ5Zv0TWNwy619gKRS7rpGezjDSi15XT/contact-form" class="pageclip-form" method="post">
+
+            <!-- text field -->
+            <br>
+            <label for="email">Enter your Mail ID: </label><input type="email" name="email" value=""/>
+            <br>
+            <br>
+            <label for="name">Enter your Name: </label><input type="text" name="name" value=""/>
+            <br>
+            <br>
+            <label for="email">Enter your Subject: </label><input type="text" name="subject" value=""/>
+            <br>
+            <br>
+            <label for="body">Body :</label> 
+            <textarea type="text" name="body">
+                
+            </textarea>
+            <br>
+            
+            <!-- hidden inputs -->
+            <input type="hidden" name="version" value="v1" />
+            <button class="pageclip-form__submit submit" type="button">
+              <span>Submit</span>
+            </button>
+          </form>
+    </section>
+    
     </main>
     <!-- TODO Add Footer -->
     <footer>
-        &copy;Md Manzer Alam, Made by Md Mannzer Alam aka sherlock6147
+        &copy;Md Manzer Alam, Made by Md Manzer Alam aka sherlock6147
     </footer>
+    <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
 </body>
 <script src="/js/index.js"></script>
 </html>

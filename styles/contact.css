@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;400;600;700&family=Ubuntu&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;400;600;700&family=Ubuntu&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;400;600;700&family=Ubuntu&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -187,164 +186,13 @@ nav ul li a:hover {
   width: 0;
 }
 
-header {
-  border-radius: 20px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#59FFAF), to(rgba(89, 225, 255, 0.69)));
-  background: linear-gradient(180deg, #59FFAF 0%, rgba(89, 225, 255, 0.69) 100%);
-  color: #17093E;
-  min-height: 40vh;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-header article {
-  min-width: 200px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+footer {
+  padding-top: 10px;
+  margin: auto;
   text-align: center;
-  padding-top: 20px;
-}
-
-header article h1 {
-  font-size: 32px;
-  font-family: "Fira Sans";
-}
-
-header article h2 {
-  font-size: 22px;
-  opacity: 0.7;
-}
-
-@media only screen and (max-width: 700px) {
-  header article {
-    padding: 0px;
-  }
-  header article h1 {
-    font-size: 28px;
-  }
-}
-
-#Hat {
-  -webkit-animation: hatr 0.6s ease-in-out infinite;
-          animation: hatr 0.6s ease-in-out infinite;
-  -webkit-transform-origin: center;
-          transform-origin: center;
-  transform-box: fill-box;
-}
-
-@-webkit-keyframes hatr {
-  from {
-    -webkit-transform: rotateZ(-10deg);
-            transform: rotateZ(-10deg);
-  }
-  to {
-    -webkit-transform: rotateZ(10deg);
-            transform: rotateZ(10deg);
-  }
-}
-
-@keyframes hatr {
-  from {
-    -webkit-transform: rotateZ(-10deg);
-            transform: rotateZ(-10deg);
-  }
-  to {
-    -webkit-transform: rotateZ(10deg);
-            transform: rotateZ(10deg);
-  }
-}
-
-.animation svg {
-  width: 280px;
-}
-
-@media only screen and (max-width: 700px) {
-  .animation svg {
-    width: 60vw;
-    height: auto;
-  }
-}
-
-#projects {
-  margin: 10px;
-  padding: 10px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  background: linear-gradient(133.39deg, #3DFE0D 1.03%, rgba(194, 253, 24, 0.982611) 1.04%, rgba(5, 245, 217, 0.69) 114.72%);
-  border-radius: 20px;
-  min-height: 30vh;
-  color: #000000;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#projects .p-table {
-  min-width: 70%;
-}
-
-#projects .p-table .projects-table {
-  text-align: left;
-  width: 100%;
-}
-
-@media only screen and (max-width: 700px) {
-  #projects {
-    margin: 0;
-    margin-top: 20px;
-    padding: 15px;
-  }
-}
-
-#languages {
-  margin: 10px;
-  padding: 10px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  background: linear-gradient(211.19deg, #CCFF00 0%, rgba(255, 122, 0, 0.69) 128.43%);
-  border-radius: 20px;
-  color: #000000;
-  min-height: 30vh;
-}
-
-#languages ul {
-  padding-left: 10%;
-  list-style: none;
-}
-
-#languages ul li {
-  text-align: left;
-}
-
-@media only screen and (max-width: 700px) {
-  #languages {
-    margin: 0;
-    margin-top: 20px;
-    padding: 15px;
-  }
+  min-height: 10vh;
+  vertical-align: baseline;
+  background-color: #373737;
 }
 
 #contact {
@@ -379,9 +227,9 @@ header article h2 {
   min-height: 100px;
   margin-left: 15px;
   border: none;
+  font-size: 20px;
   padding: 10px;
   border-radius: 5px;
-  font-size: 20px;
   background-color: rgba(240, 240, 240, 0.5);
   outline: none;
 }
@@ -395,37 +243,4 @@ header article h2 {
   border-radius: 100px;
   cursor: pointer;
 }
-
-.section-holder {
-  margin-bottom: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-@media only screen and (max-width: 700px) {
-  .section-holder {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
-@media only screen and (min-width: 700px) {
-  .section-holder {
-    margin-top: 20px;
-  }
-}
-
-footer {
-  padding-top: 10px;
-  margin: auto;
-  text-align: center;
-  min-height: 10vh;
-  vertical-align: baseline;
-  background-color: #373737;
-}
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=contact.css.map */
