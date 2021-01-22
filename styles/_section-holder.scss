@@ -1,0 +1,8 @@
+.section-holder{
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    @media only screen and (max-width: 700px){
+        flex-direction: column;
+    }
+}

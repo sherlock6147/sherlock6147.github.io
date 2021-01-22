@@ -25,7 +25,7 @@ nav{
             text-align: center;
             a{
                 text-decoration: none;
-                font-size: 28px;
+                font-size: 22px;
                 font-weight: 600;
                 font-family: $heading;
                 padding: 5px;
@@ -40,8 +40,8 @@ nav{
     flex: 0;
     a{
         img{
-            height: 60px;
-            width: 60px;
+            height: 50px;
+            width: 50px;
             @media only screen and (max-width: 700px){
                 height: 40px;
                 width: 40px;   
@@ -64,8 +64,8 @@ nav{
     flex-direction: row;
     align-content: flex-end;
     img{
-        height: 60px;
-        width: 60px;
+        height: 50px;
+        width: 50px;
         @media only screen and (max-width: 700px){
             height: 40px;
             width: 40px;   

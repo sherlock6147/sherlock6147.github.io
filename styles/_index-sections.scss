@@ -1,0 +1,48 @@
+@import 'colors';
+#projects{
+    margin: 10px;
+    padding: 10px;
+    flex: 1;
+    background: linear-gradient(133.39deg, #3DFE0D 1.03%, rgba(194, 253, 24, 0.982611) 1.04%, rgba(5, 245, 217, 0.69) 114.72%);
+    border-radius: 20px;
+    min-height: 30vh;
+    color: $on-section-color;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    .p-table{
+        min-width: 70%;
+        .projects-table{
+            text-align: left;
+            width: 100%;
+        }
+    }
+    @media only screen and (max-width: 700px){
+        margin: 0;
+        margin-top: 20px;
+        padding: 15px;
+    }
+}
+#languages{
+    margin: 10px;
+    padding: 10px;
+    flex: 1;
+    background: linear-gradient(211.19deg, #CCFF00 0%, rgba(255, 122, 0, 0.69) 128.43%);
+    border-radius: 20px;
+    color: $on-section-color;
+    min-height: 30vh;
+    
+    ul{
+        padding-left: 10%;
+        list-style: none;
+        li{
+            text-align: left;
+        }
+    }
+    @media only screen and (max-width: 700px){
+        margin: 0;
+        margin-top: 20px;
+        padding: 15px;
+    }
+}
