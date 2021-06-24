@@ -17,8 +17,9 @@ request.onload = function () {
 
 request.send();
 
-var menuBtn = document.getElementById('menu-btn');
-var navMenu = document.getElementById('main-nav');
-menuBtn.addEventListener("click", function () {
-    navMenu.classList.toggle("invisible");
-});
+var navMenu = document.getElementById('mob-nav');
+
+function showNav() {
+    var menuBtn = document.getElementById('menu-btn');
+    navMenu.classList.toggle('invisible');
+}
