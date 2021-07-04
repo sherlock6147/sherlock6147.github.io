@@ -20,19 +20,21 @@ request.onload = function () {
         ++i;
     }
     document.getElementById('projects-view').innerHTML = statusHTML;
+    var swiper = new Swiper(".mySwiper", {
+        navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+        },
+    });
 };
 
 
 request.send();
-
+if (request.status == 403) {
+    alert("try after an hour")
+}
 var navMenu = document.getElementById('small');
 
 function toggleMenu() {
     navMenu.classList.toggle('inactive');
 }
-var swiper = new Swiper(".mySwiper", {
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
