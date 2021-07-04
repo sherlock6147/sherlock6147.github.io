@@ -23,7 +23,7 @@ request.onload = function () {
 };
 
 
-// request.send();
+request.send();
 
 var navMenu = document.getElementById('small');
 
