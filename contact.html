@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Github Portfolio</title>
+    <link rel="stylesheet" href="./styles/contact.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+</head>
+<nav id="large">
+    <li><a href="./index.html" class="nav-link">Home</a></li>
+    <li><a href="./contact.html" class="nav-link">Contact</a></li>
+    <li><a href="./repos.html" class="nav-link">Repositories</a></li>
+    <li><a href="#" class="nav-link">CV</a></li>
+</nav>
+<nav id="small" class="inactive">
+    <li><a href="./index.html" class="nav-link">Home</a></li>
+    <li><a href="./contact.html" class="nav-link">Contact</a></li>
+    <li><a href="./repos.html" class="nav-link">Repositories</a></li>
+    <li><a href="#" class="nav-link">CV</a></li>
+</nav>
+<button id="menu-btn" onclick="toggleMenu()">
+    <img src="./Assets/Menu Logo.png" alt="menu logo">
+</button>
+<body>
+    <header>
+        <section>
+            <div id="contact-form-box">
+                <h3>Contact Me</h3>
+                <form action="https://send.pageclip.co/YQ5Zv0TWNwy619gKRS7rpGezjDSi15XT/contact-form" class="pageclip-form" method="post">
+
+                    <!-- text field -->
+                    <br>
+                    <label for="email">Enter your Mail ID: </label><input type="email" required name="email" value=""/>
+                    <br>
+                    <br>
+                    <label for="name">Enter your Name: </label><input type="text" required name="name" value=""/>
+                    <br>
+                    <br>
+                    <label for="email">Enter your Subject: </label><input required type="text" name="subject" value=""/>
+                    <br>
+                    <br>
+                    <label for="body">Body :</label> 
+                    <textarea required type="text" name="body" id="body-text" rows="10"cols="30">
+                        
+                    </textarea>
+                    <br>
+                    
+                    <!-- hidden inputs -->
+                    <input type="hidden" name="version" value="v1" />
+                    <button class="pageclip-form__submit" id="submit-btn" type="submit">
+                    <span>Submit</span>
+                    </button>
+                </form>
+            </div>
+        </section>
+    </header>
+</body>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="./js/contact.js"></script>
+</html>

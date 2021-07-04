@@ -1,11 +1,74 @@
 @import 'fonts';
+@import 'colors';
 *{
-    box-sizing: border-box;
-    margin: 0;
     padding: 0;
-    font-family: $body;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: $font;
 }
-a{
+html{
+    font-size: 16px;
+    @media screen and (max-width: 600px) {
+        font-size: 12px;
+    }
+}
+body{
+    background-color: $shade-1;
+    color: $shade-7;
+}
+h1,h2,h3,h4,p{
     color: inherit;
-    text-decoration: none;
+}
+h1{
+    font-size: 4rem;
+    font-weight: 700;
+}
+h2{
+    font-size: 3rem;
+    font-weight: 700;
+}
+h3{
+    font-size: 2rem;
+    font-weight: 400;
+}
+h4{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+p{
+    font-size: 1rem;
+    font-weight: 400;
+}
+#small {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 99;
+    background-color: $shade-1;
+    margin: 0;
+    gap: 2em;
+    li{
+        // flex: 1;
+        padding: 0.5em 1em;
+        // opacity: 0.8;
+        border-radius: 10px;
+        a{
+            opacity: 1;
+            margin: auto;
+            font-size: 1.5rem;
+        }
+    }
+    @media screen and (min-width: 700px) {
+        display: none;
+    }
+    &.inactive{
+        display: none;
+    }
 }

@@ -20,6 +20,7 @@ nav{
         display: none;
     }
 }
+
 header{
     height: 100vh;
     width: 100%;
@@ -39,11 +40,12 @@ header{
              margin: 0px 10px;
          }
          #projects-holder{
-            margin-top: 4em;
+            // margin-top: 4em;
             padding: 0.8rem 1em;
-            max-width: 500px;
+            max-width: 600px;
             min-height: 400px;
             .swiper-container{
+                margin-top: 5em;
                 height: 100%;
                 width: 100%;
                 background-color: $shade-0;

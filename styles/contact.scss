@@ -1,5 +1,116 @@
 @import 'base';
-@import 'body';
-@import 'nav';
-@import 'footer';
-@import 'contact-section';
+nav{
+    position: fixed;
+    left: 0;
+    z-index: 1;
+    top: 0;
+    margin: 10px 100px;
+    display: flex;
+    font-size: 1.5rem;
+    list-style: none;
+    gap: 2.5em;
+    a{
+        text-decoration: none;
+        color: $shade-5;
+        font-weight: 700;
+    }
+}
+#large{
+    @media screen and (max-width: 700px){
+        display: none;
+    }
+}
+
+header{
+    height: 100vh;
+    width: 100%;
+    background: url('../Assets/header_bg.png');
+    background-position: top right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @media screen and (max-width:500px) {
+        background-position: top right -150px;
+    }
+    section{
+         margin: 0px 100px;
+         position: relative;
+         top: 4rem;
+         color: $shade-7;
+         @media screen and (max-width: 600px) {
+             margin: 0px 10px;
+         }
+    }
+}
+#menu-btn{
+    position: fixed;
+    margin: 15px 10px;
+    right: 0;
+    top: 0;
+    height: 2rem;
+    z-index: 9999;
+    width: 2rem;
+    outline: none;
+    border: none;
+    background: none;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+    @media screen and (min-width: 700px) {
+        display: none;
+    };
+}
+#contact-form-box{
+    position: relative;
+    top: 7em;
+    max-width: 500px;
+    border-radius: 2em;
+    font-size: 1em;
+    padding: 1em 1em;
+    background-color: $shade-0;
+    @media screen and (max-width: 800px) {
+        top: 9em;
+    }
+    h3{
+        text-align: center;
+        color: $shade-5;
+    }
+    form{
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        input{
+            width: 29ch;
+            border-radius: 5px;
+        }
+        label{
+            font-size: 1.5em;
+            font-weight: 700;
+        }
+        label,input{
+            flex: 1;
+        }
+        #body-text{
+            flex: 3;
+            border-radius: 1em;
+            width: 29ch;
+        }
+        input,textarea{
+            padding: 0.5em 1em;
+            outline: none;
+            width: 80%;
+            background-color: $shade-5;
+        }
+    }
+}
+#submit-btn{
+    border: none;
+    background-color: $alert-1;
+    color: $shade-7;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 0.5em 1em;
+    border-radius: 10px;
+}
