@@ -2,7 +2,7 @@ var request = new XMLHttpRequest();
 
 request.open('GET', 'https://api.github.com/users/sherlock6147/repos', true);
 
-request.setRequestHeader('User-Agent', 'Github-Portfolio-Site');
+// request.setRequestHeader('User-Agent', 'Github-Portfolio-Site');
 
 request.onload = function () {
     var data = JSON.parse(this.response);

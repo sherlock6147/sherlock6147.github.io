@@ -159,6 +159,10 @@ header section #projects-holder {
   min-height: 400px;
 }
 
+header section #projects-holder .swiper-pagination {
+  position: relative !important;
+}
+
 header section #projects-holder .swiper-container {
   margin-top: 5em;
   height: 100%;
@@ -166,6 +170,7 @@ header section #projects-holder .swiper-container {
   background-color: #030508;
   padding: 1rem;
   border-radius: 1.5rem;
+  overflow: hidden;
 }
 
 header section #projects-holder .swiper-container .swiper-wrapper .swiper-slide {

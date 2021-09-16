@@ -44,6 +44,9 @@ header{
             padding: 0.8rem 1em;
             max-width: 600px;
             min-height: 400px;
+            .swiper-pagination{
+                position: relative !important;
+            }
             .swiper-container{
                 margin-top: 5em;
                 height: 100%;
@@ -51,7 +54,9 @@ header{
                 background-color: $shade-0;
                 padding: 1rem;
                 border-radius: 1.5rem;
+                overflow: hidden;
                 .swiper-wrapper{
+
                     .swiper-slide{
                         text-align: left;
                         padding: 10px 2.2em;
