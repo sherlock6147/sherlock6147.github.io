@@ -171,6 +171,7 @@ header section #projects-holder .swiper-container {
   padding: 1rem;
   border-radius: 1.5rem;
   overflow: hidden;
+  position: relative;
 }
 
 header section #projects-holder .swiper-container .swiper-wrapper .swiper-slide {
